@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Lv</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<form id="upload-file" method="post" enctype="multipart/form-data">
+  
+		  <h1>Upload <strong>your call audio file</strong></h1>
+		  
+			<fieldset>
+				<div class="form-group">
+					<label for="account-id">Account Id</label>
+					<input type="text" name="account-id" id="account-id" class="form-controll"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="form-group">
+					<label for="contact-id">Contact Id</label>
+					<input type="text" name="contact-id" id="contact-id" class="form-controll"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="form-group file-area">
+				<label for="audio">Audio file <span>Your audio should be </span></label>
+				<input type="file" name="audio" id="audio" required="required"/>
+				<div class="file-dummy">
+				  <div class="success">Great, your file is selected. Keep on.</div>
+				  <div class="default">Please select some file</div>
+				</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="form-group">
+					<button type="submit">Convert to text</button>
+				</div>
+			</fieldset>
+		</form>
+		<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+	</body>
+</html>
